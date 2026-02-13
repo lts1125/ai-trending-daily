@@ -1,15 +1,25 @@
 {
   "repos": [
     "MerlinStacks/socaliseit",
+    "geeks-accelerator/in-bed-ai",
+    "theunstopabble/Satark-AI",
+    "hallwayskiing/hallw",
+    "moketchups/BoundedSystemsTheory",
+    "Divinity10/GLADyS",
     "ajroetker/go-highway",
-    "jihe520/mindpocket",
+    "Ramsbaby/openclaw-self-healing",
     "thrashr888/agentkernel",
     "waybarrios/vllm-mlx",
+    "ChristopherMarais/barkandambrosiagallery",
+    "thiagogaia/ouroborus",
+    "airbytehq/airbyte-agent-connectors",
+    "sitta07/pilltrackMLops",
+    "Mng-dev-ai/claudex",
+    "SatGate-io/satgate",
     "openclaw/openclaw",
     "LissajousX/aireader",
-    "moketchups/BoundedSystemsTheory",
-    "Mng-dev-ai/claudex",
-    "Ramsbaby/openclaw-self-healing"
+    "alxchse/projects",
+    "jihe520/mindpocket"
   ],
-  "updated_at": "2026-02-13T10:37:04.544873"
+  "updated_at": "2026-02-13T10:37:53.657256"
 }
