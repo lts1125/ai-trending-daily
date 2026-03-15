@@ -4,41 +4,60 @@
 
 ---
 
-### 2505.01177
-## LLM Security: Vulnerabilities, Attacks, Defenses, and Countermeasures
+## 论文 1: Safety and Security Analysis of Large Language Models
+**arXiv: 2509.10655**
 
-### Introduction to LLMs
+### 核心观点
+- LLMs 面临对抗性操纵和利用的漏洞
+- 提出 **RSI (风险严重指数)** 量化评估 LLMs 安全态势
+- 发现测试的 LLMs **安全过滤器存在广泛漏洞**
 
-Artificial intelligence (AI) has emerged to meet the demand for technologies that can emulate and surpass human cognitive capabilities. The goal of AI is to create agents that perceive and act upon the environment, replicating human and rational behavior in systems that can operate autonomously within complex, real-world contexts. A significant development in this field has been the rise of large language models (LLMs), which build on the success of deep learning in identifying complex patterns within large datasets.
+### 评估的 9 个模型
+| 模型 | 发布者 | 日期 |
+|------|--------|------|
+| Claude Opus 4 | Anthropic | May 2025 |
+| DeepSeek V3 | DeepSeek | Dec 2024 |
+| GPT-4o | OpenAI | May 2024 |
+| Gemini 2.5 Flash | Google | June 2025 |
+| Grok 3 | xAI | Feb 2025 |
+| Llama 4 Scout | Meta | Apr 2025 |
+| Mistral 7B | MistralAI | Sep 2023 |
+| Qwen 3 1.7B | Alibaba | Apr 2025 |
 
-LLMs have made notable contributions to AI, enabling applications across diverse fields such as education, customer support, healthcare, or even scientific research. A major breakthrough in LLMs occurred with the introduction of the Transformer architecture, which leverages a self-attention mechanism to enable parallel processing and efficiently manage long-range dependencies. LLMs, from Google's BERT to the different incarnations of OpenAI's GPT, have revolutionized AI-driven tasks by leveraging their ability to generate human-like language.
+### 评估方法
+- 对抗 24 个安全类别测试：暴力犯罪、非法活动、网络安全威胁等
+- 使用 Risk Severity Index (RSI) 评估
 
-### Security Threats and Vulnerabilities
+### 实验数据
+- **Defect Rate**: DeepSeek V3 达到 0.840 (最高风险)
+- **Claude Opus 4** 和 **GPT-4o** 相对最强
+- **开源模型**（Llama、Mistral、Qwen）更容易被攻击
 
-As the deployment of LLMs expands across various sectors, so too do the security threats and vulnerabilities associated with their use. These models are particularly vulnerable to a variety of attacks, where even minor, intentional modifications to input data can drastically alter the model's output, potentially leading to critical issues such as misrecognition errors and privacy breaches. Such attacks can occur both during the training phase and after the model has been fully trained.
-
-These vulnerabilities pose substantial risks not only to the reliability and safety of AI systems but also to the security and privacy of users interacting with these models. Despite the growing recognition of these risks, comprehensive investigations into the vulnerabilities of LLMs —partic
+### 主要发现
+1. 测试的 LLMs 安全过滤器存在**广泛漏洞**
+2. 呼吁需要**更强的对齐和负责任的部署**
+3. 对开源和快速迭代的模型需要特别关注
+4. 需要对 LLMs 潜在危害进行**彻底评估**
 
 ---
 
-### 2509.10655
-## Safety and Security Analysis of Large Language Models
+## 论文 2: LLM Security - Vulnerabilities, Attacks, and Defenses
+**arXiv: 2505.01177**
 
-Large Language Models (LLMs) have the potential to greatly benefit society, but their vulnerabilities to adversarial manipulation and exploitation pose serious safety, security, and ethical risks. As new threats emerge, it becomes crucial to assess the safety and security of LLMs against evolving adversarial prompt techniques.
+### 核心观点
+- AI 领域出现大型语言模型 (LLMs)，基于 Transformer 架构
+- LLMs 在教育、医疗、客户支持等领域有广泛应用
 
-## Background and Motivation
+### 安全威胁类型
+1. **Prompt Injection** - 对输入的微小修改会大幅改变输出
+2. **Privacy Breaches** - 隐私泄露
+3. **Training Phase Attacks** - 训练阶段攻击
+4. **Post-deployment Attacks** - 部署后攻击
 
-The widespread deployment of LLMs has led to a race among companies to develop and release their own LLMs. Today, many prominent LLMs exist in the AI industry, including Google's Gemini line, Meta's Llama series, xAI's Grok models, and DeepSeek's highly proficient V3 and R1 models. In education, LLMs can benefit students by serving as teaching assistants, providing supplementary insight into specific topics, and translating learning materials. In healthcare, LLMs currently provide diagnoses and treatment options with an increasing degree of accuracy and a low risk of harmful outcomes.
-
-## Research Contributions
-
-This research provides an empirical analysis and risk profile of nine prominent LLMs against 24 different security and safety categories. The study introduces the Risk Severity Index (RSI), an agile and scalable evaluation score, to quantify and compare the security posture and creating a risk profile of LLMs. The RSI is intended to be a valuable metric for comparing the risks of LLMs across the evolving threats landscape.
-
-## Findings and Implications
-
-The study finds widespread vulnerabilities in the safety filters of the LLMs tested and highlights the urgent need for stronger alignment, responsible deployment practices, and model governance, particularly for open-access and rapidly iterated models. Insufficient implementations of LLM's safety filters can have sweeping harms, including providing responses that aid actors in cyberattacks or violent crime. The study also highlights the critical need for thorough assessments of LLMs' potential harms
+### 研究问题
+- 对 LLMs 漏洞的全面调查仍然不足
+- 需要系统性的防御策略
 
 ---
 
-
-*更多论文请访问: https://arxiv.org/list/cs.LG/recent*
+*每周一自动更新*
